@@ -1,0 +1,216 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}
+
+.join_form_container{
+  text-align: center;
+  margin-top: 5%;
+}
+.join_input{
+  border: solid lightgray 1px;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 300px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+.join_button{
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+  color: white;
+  max-width: 300px;
+  padding: 13px;
+  margin-bottom: 15px;
+  background-color: teal;
+}
+.msgs_container{
+  background-color: whitesmoke;
+  padding: 5px;
+  height: 450px;
+}
+.my_msgs_container{
+  text-align: right;
+}
+.my_msgs{
+  width: fit-content;
+  min-width: 100px;
+  background-color: teal;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 13px;
+  border-radius: 10px;
+  margin-top: 10px;
+
+}
+.other_msgs_container{
+  text-align: left;
+}
+.other_msgs{
+  width: fit-content;
+  background-color: rgb(96, 60, 255);
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  min-width: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 13px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.my_msgs_container small{
+  font-size: 10px;
+  margin-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #282c34;
+}
+.other_msgs_container small{
+  font-size: 10px;
+  margin-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #282c34;
+}
+.admin_msg{
+  width: fit-content;
+  padding: 2px;
+  margin-top: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: solid lightgray 1px;
+  border-radius: 5px;
+}
+.chat_container{
+  width: 40%;
+  max-width: 400px;
+}
+.user_name_container{
+  background-color: teal;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+.send_msg_box{
+  background-color: whitesmoke;
+  border-radius: 0px 0px 10px 10px;
+  padding-bottom: 5px;
+}
+.send_msg_box input{
+  width: 70%;
+  border: none;
+  background-color: whitesmoke;
+  outline: none;
+  padding: 10px;
+}
+.send_msg_box button{
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  width: 40px; 
+  height: 40px;
+  margin: 5px; 
+}
+footer{
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+}
+footer a{
+  color:white;
+  background-color: teal;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 10px;
+}
+footer i{
+  display: block;
+  margin-top: 18px;
+  font-size: 12px;
+  font-style: normal;
+  color: #282c34;
+}
+.wait_container{
+  padding-top: 15%;
+}
+.wait_container img{
+  width: 100px;
+}
+@keyframes rotating {
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  animation: rotating 2s linear infinite;
+}
+
+
+@media (min-width: 100px) and (max-width: 480px) {
+  .chat_container{
+    width: 100%;
+  }
+  body{ 
+    margin: 0px;
+    padding: 0px;
+  }
+  .join_form_container{
+    padding: 10px;
+  }
+}
